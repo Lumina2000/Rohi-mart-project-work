@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0071ce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Rohi Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./Images/Company logo.webp" alt="Rohi Mart Logo" style="width:60px;height:60px;border-radius:50%;">
+        </a>
+        <nav class="main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="cart.html" class="cta-btn" id="cartBtn">Cart (0)</a>
+            <a href="account.html" class="cta-btn signup-btn" id="accountBtn">Sign In / Sign Up</a>
+        </div>
+    </header>
+    <div class="search-bar-container">
+        <form class="search-bar" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Electronics Section -->
+    <section class="features" style="max-width:1100px;">
+        <h2 style="color:#0071ce;text-align:center;">Electronics</h2>
+        <div class="features-list" style="flex-wrap:wrap;justify-content:center;">
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/smart phone.jpeg" alt="Smartphone" style="width: 100%; height: 500%;">
+                <h3>Smartphone</h3>
+                <p>Latest Android smartphone with high-res camera and long battery life.</p>
+                <p><strong>Price:</strong> GH₵ 3,500</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (89 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Smartphone">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/headphones.webp" alt="Headphones" style="width: 100%; height: 500%;">
+                <h3>Wireless Headphones</h3>
+                <p>Noise-cancelling headphones for music and calls.</p>
+                <p><strong>Price:</strong> GH₵ 650</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (45 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Headphones">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/smart tv.webp" alt="Smart TV" style="width: 100%; height: 500%;">
+                <h3>Smart TV</h3>
+                <p>50-inch 4K UHD Smart TV with streaming apps.</p>
+                <p><strong>Price:</strong> GH₵ 4,200</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (32 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Smart TV">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/bluetooth spseaker.webp" alt="Bluetooth Speaker" style="width:100%;border-radius:12px;">
+                <h3>Bluetooth Speaker</h3>
+                <p>Portable wireless speaker with deep bass and long battery life.</p>
+                <p><strong>Price:</strong> GH₵ 250</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (61 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Bluetooth Speaker">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/laptop.webp" alt="Laptop" style="width:100%;border-radius:12px;">
+                <h3>Laptop</h3>
+                <p>Lightweight laptop with 8GB RAM and 256GB SSD, perfect for work and study.</p>
+                <p><strong>Price:</strong> GH₵ 5,800</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (27 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Laptop">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/tablet.webp" alt="Tablet" style="width:100%;border-radius:12px;">
+                <h3>Tablet</h3>
+                <p>10-inch HD tablet, perfect for reading and streaming.</p>
+                <p><strong>Price:</strong> GH₵ 2,100</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (38 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-feature product="Tablet">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/smart watch.webp" alt="Smartwatch" style="width:100%;border-radius:12px;">
+                <h3>Smartwatch</h3>
+                <p>Track your fitness and notifications on the go.</p>
+                <p><strong>Price:</strong> GH₵ 950</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (52 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Smartwatch">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/camera.jpeg" alt="Camera" style="width:100%;border-radius:12px;">
+                <h3>Camera</h3>
+                <p>High-resolution camera for stunning photos and videos.</p>
+                <p><strong>Price:</strong> GH₵ 1,500</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (102 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Camera">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/air buds.webp" alt="Air Buds" style="width:100%;border-radius:12px;">
+                <h3>Air Buds</h3>
+                <p>Wireless earbuds with noise cancellation and touch controls.</p>
+                <p><strong>Price:</strong> GH₵ 450</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (200 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Air Buds">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/power bank.webp" alt="Power Bank" style="width:100%;border-radius:12px;">
+                <h3>Power Bank</h3>
+                <p>Portable charger with 10000mAh capacity.</p>
+                <p><strong>Price:</strong> GH₵ 150</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (569 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Power Bank">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/SSD.webp" alt="SSD" style="width:100%;border-radius:12px;">
+                <h3>SSD</h3>
+                <p>High-speed solid-state drive for faster storage.</p>
+                <p><strong>Price:</strong> GH₵ 950</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (52 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="SSD">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/router.jpg" alt="Router" style="width:100%;border-radius:12px;">
+                <h3>Router</h3>
+                <p>High-speed router for seamless internet connectivity.</p>
+                <p><strong>Price:</strong> GH₵ 1,200</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (52 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Router">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home & Living Section -->
+    <section class="features" style="max-width:1100px;">
+        <h2 style="color:#0071ce;text-align:center;">Home & Living</h2>
+        <div class="features-list" style="flex-wrap:wrap;justify-content:center;">
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/cook ware set.webp" alt="Cookware Set" style="width:100%;border-radius:12px;">
+                <h3>Cookware Set</h3>
+                <p>Non-stick pots and pans for easy, healthy cooking.</p>
+                <p><strong>Price:</strong> GH₵ 600</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (57 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Cookware Set">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/laundry detergent.webp" alt="Laundry Detergent" style="width:100%;border-radius:12px;">
+                <h3>Laundry Detergent</h3>
+                <p>Powerful cleaning for all fabrics, fresh scent.</p>
+                <p><strong>Price:</strong> GH₵ 45</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (76 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Laundry Detergent">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/sofa-4864034_1280.jpg" alt="Sofa Chair" style="width:100%;border-radius:12px;">
+                <h3>Sofa Chair</h3>
+                <p>Comfortable and stylish sofa chair for your living room.</p>
+                <p><strong>Price:</strong> GH₵ 1,200</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (21 reviews)
+                </div><br>
+                <button class="cta-btn add-cart-btn" data-product="Sofa Chair">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/table lamp.webp" alt="Table Lamp" style="width:100%;height:160px;object-fit:cover;border-radius:12px;">
+                <h3>Table Lamp</h3>
+                <p>Modern LED table lamp for your bedroom or study.</p>
+                <p><strong>Price:</strong> GH₵ 90</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (44 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Table Lamp">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/wall clock.webp" alt="Wall Clock" style="width:100%;height:160px;object-fit:cover;border-radius:12px;">
+                <h3>Wall Clock</h3>
+                <p>Classic wall clock with silent movement and easy-to-read numbers.</p>
+                <p><strong>Price:</strong> GH₵ 55</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (19 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Wall Clock">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/blender.webp" alt="Blender" style="width:100%;height:160px;object-fit:cover;border-radius:12px;">
+                <h3>Blender</h3>
+                <p>High-speed blender for smoothies and soups.</p>
+                <p><strong>Price:</strong> GH₵ 300</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (29 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Blender">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/iron.webp" alt="Electric Iron" style="width:100%;border-radius:12px;">
+                <h3>Electric Iron</h3>
+                <p>Steam iron for crisp, wrinkle-free clothes.</p>
+                <p><strong>Price:</strong> GH₵ 110</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (17 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Electric Iron">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/vacuum cleaner.webp" alt="Vacuum Cleaner" style="width:100%;border-radius:12px;">
+                <h3>Vacuum Cleaner</h3>
+                <p>Powerful vacuum cleaner for a dust-free home.</p>
+                <p><strong>Price:</strong> GH₵ 1,500</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (1,756 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Vacuum Cleaner">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/fan.webp" alt="Electric Fan" style="width:100%;border-radius:12px;">
+                <h3>Electric Fan</h3>
+                <p>Quiet and efficient fan for cooling any room.</p>
+                <p><strong>Price:</strong> GH₵ 999</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (56 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Electric Fan">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/curtains.webp" alt="Curtains" style="width:100%;border-radius:12px;">
+                <h3>Curtains</h3>
+                <p>Elegant curtains to enhance your living space.</p>
+                <p><strong>Price:</strong> GH₵ 150</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (199 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Curtains">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/rice cooker.jpeg" alt="Rice Cooker" style="width:100%;border-radius:12px;">
+                <h3>Rice Cooker</h3>
+                <p>Perfectly cooks rice with minimal effort.</p>
+                <p><strong>Price:</strong> GH₵ 250</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (900 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Rice Cooker">Add to Cart</button>
+            </div>
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/washing machine.webp" alt="Washing Machine" style="width:100%;border-radius:12px;">
+                <h3>Washing Machine</h3>
+                <p>Efficient washing machine for all your laundry needs.</p>
+                <p><strong>Price:</strong> GH₵ 1,200</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (20,000 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Washing Machine">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Groceries Section -->
+    <section class="features" style="max-width:1100px;">
+        <h2 style="color:#0071ce;text-align:center;">Groceries</h2>
+        <div class="features-list" style="flex-wrap:wrap;justify-content:center;">
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/Fresh-Apples.jpg" alt="Fresh Apples" style="width:100%;border-radius:12px;">
+                <h3>Fresh Apples</h3>
+                <p>Juicy, crisp apples perfect for snacks and desserts.</p>
+                <p><strong>Price:</strong> GH₵ 25 / kg</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (124 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Fresh Apples">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/Long grain rice.webp" alt="Rice" style="width:100%;border-radius:12px;">
+                <h3>Long Grain Rice</h3>
+                <p>Premium long grain rice for all your meals.</p>
+                <p><strong>Price:</strong> GH₵ 40 / 5kg</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (98 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Rice">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/fresh milk.webp" alt="Milk" style="width:100%;border-radius:12px;">
+                <h3>Fresh Milk</h3>
+                <p>Rich and creamy fresh milk for your breakfast.</p>
+                <p><strong>Price:</strong> GH₵ 12 / litre</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (56 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Milk">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/fresh tomatoes.jpeg" alt="Tomatoes" style="width:100%;border-radius:12px;">
+                <h3>Fresh Tomatoes</h3>
+                <p>Ripe, juicy tomatoes for salads and cooking.</p>
+                <p><strong>Price:</strong> GH₵ 10 / pack</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (88 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Tomatoes">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/whole wheat bread.jpg" alt="Bread" style="width:100%;border-radius:12px;">
+                <h3>Whole Wheat Bread</h3>
+                <p>Freshly baked whole wheat bread, healthy and tasty.</p>
+                <p><strong>Price:</strong> GH₵ 18</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (54 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Bread">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/freah eggs.webp" alt="Eggs" style="width:100%;border-radius:12px;">
+                <h3>Fresh Eggs</h3>
+                <p>Farm fresh eggs, pack of 12.</p>
+                <p><strong>Price:</strong> GH₵ 22</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (77 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Eggs">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/oranges.webp" alt="Oranges" style="width:100%;border-radius:12px;">
+                <h3>Oranges</h3>
+                <p>Sweet and juicy oranges, 1kg pack.</p>
+                <p><strong>Price:</strong> GH₵ 18</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (63 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Oranges">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/milo.jpg" alt="Milo" style="width:100%;border-radius:12px;">
+                <h3>Milo</h3>
+                <p>Delicious chocolate malt drink, 500g.</p>
+                <p><strong>Price:</strong> GH₵ 25</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (163 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Milo">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/sugar.webp" alt="Sugar" style="width:100%;border-radius:12px;">
+                <h3>Sugar</h3>
+                <p>Refined sugar, 1kg pack.</p>
+                <p><strong>Price:</strong> GH₵ 15</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (603 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Sugar">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/corn flakes.webp" alt="Corn Flakes" style="width:100%;border-radius:12px;">
+                <h3>Corn Flakes</h3>
+                <p>Crispy corn flakes, 500g pack.</p>
+                <p><strong>Price:</strong> GH₵ 20</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (112 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="corn flakes">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/oats.webp" alt="Oats" style="width:100%;border-radius:12px;">
+                <h3>Oats</h3>
+                <p>Healthy oats, 1kg pack.</p>
+                <p><strong>Price:</strong> GH₵ 30</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (5,000 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Oats">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/pasta.webp" alt="Pasta" style="width:100%;border-radius:12px;">
+                <h3>Pasta</h3>
+                <p>Delicious pasta, 500g pack.</p>
+                <p><strong>Price:</strong> GH₵ 20</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (789 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Pasta">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clothing Section -->
+    <section class="features" style="max-width:1100px;">
+        <h2 style="color:#0071ce;text-align:center;">Clothing</h2>
+        <div class="features-list" style="flex-wrap:wrap;justify-content:center;">
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/men's T-shirt.webp" alt="Men's T-Shirt" style="width:100%;border-radius:12px;">
+                <h3>Men's T-Shirt</h3>
+                <p>Comfortable cotton t-shirt, available in multiple colors.</p>
+                <p><strong>Price:</strong> GH₵ 80</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (203 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Men's T-Shirt">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/long dress.webp" alt="Women's Dress" style="width:100%;border-radius:12px;">
+                <h3>Women's Dress</h3>
+                <p>Elegant dress for all occasions, available in various sizes.</p>
+                <p><strong>Price:</strong> GH₵ 150</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (67 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Women's Dress">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/kid's sneakers.webp" alt="Kids' Sneakers" style="width:100%;border-radius:12px;">
+                <h3>Kids' Sneakers</h3>
+                <p>Durable and stylish sneakers for kids.</p>
+                <p><strong>Price:</strong> GH₵ 60</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (34 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Kids' Sneakers">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/women's sandals.webp" alt="Women's Sandals" style="width:100%;border-radius:12px;">
+                <h3>Women's Sandals</h3>
+                <p>Comfortable and stylish sandals for everyday wear.</p>
+                <p><strong>Price:</strong> GH₵ 70</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (41 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Women's Sandals">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/men's jeans.webp" alt="Men's Jeans" style="width:100%;border-radius:12px;">
+                <h3>Men's Jeans</h3>
+                <p>Classic blue jeans, durable and comfortable fit.</p>
+                <p><strong>Price:</strong> GH₵ 120</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (73 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Men's Jeans">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/boys shirt.webp" alt="Boys' Shirt" style="width:100%;border-radius:12px;">
+                <h3>Boys' Shirt</h3>
+                <p>Stylish shirt for boys, available in various sizes.</p>
+                <p><strong>Price:</strong> GH₵ 45</p>
+                <div class="review">
+                    <span aria-label="4.5 stars" title="4.5 stars">★ ★ ★ ★ ☆</span> (22 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Boys' Shirt">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/girls dress.webp" alt="Girls' Dress" style="width:100%;border-radius:12px;">
+                <h3>Girls' Dress</h3>
+                <p>Pretty dress for girls, perfect for parties.</p>
+                <p><strong>Price:</strong> GH₵ 65</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (31 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Girls' Dress">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/hand bag.webp" alt="Hand Bag" style="width:100%;border-radius:12px;">
+                <h3>Hand Bag</h3>
+                <p>Stylish hand bag for everyday use.</p>
+                <p><strong>Price:</strong> GH₵ 200</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (654 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Hand Bag">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/skirt.webp" alt="Woman standing outdoors wearing a black sweater, beret, and a red and green plaid skirt, holding a black handbag, with pigeons and trees in the background, urban setting, stylish and confident mood" style="width:100%;border-radius:12px;">
+                <h3>Plaid Skirt Outfit</h3>
+                <p>Pretty dress for girls, perfect for parties.</p>
+                <p><strong>Price:</strong> GH₵ 165</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (131 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Plaid Skirt Outfit">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/coat.webp" alt="Girls' Dress" style="width:100%;border-radius:12px;">
+                <h3>Winter Coat</h3>
+                <p>Warm and stylish winter coat, perfect for cold weather.</p>
+                <p><strong>Price:</strong> GH₵ 250</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (447 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Winter Coat">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/suite.webp" alt="Girls' Dress" style="width:100%;border-radius:12px;">
+                <h3>Men's Suit</h3>
+                <p>Classic men's suit, perfect for formal occasions and business meetings.</p>
+                <p><strong>Price:</strong> GH₵ 350</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (120 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Men's Suit">Add to Cart</button>
+            </div>
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/belt.webp" alt="Leather Belt" style="width:100%;border-radius:12px;">
+                <h3>Leather Belt</h3>
+                <p>Classic leather belt, perfect for formal and casual outfits.</p>
+                <p><strong>Price:</strong> GH₵ 45</p>
+                <div class="review">
+                    <span aria-label="5 stars" title="5 stars">★ ★ ★ ★ ★</span> (31 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Leather Belt">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+    <p>&copy; 2025 Rohi Mart. All rights reserved.</p>
+    <div class="social-icon">
+        <a href="https://www.facebook.com" target="_blank"><img src="./Images/facebook logo.jpg"
+                style="width:33px;height:33px;border-radius:50%;" alt="Facebook">
+            <div class="facebook"></div>
+        </a>
+        <a href="https://www.twitter.com" target="_blank"><img src="./Images/x logo.jpg" alt="Twitter">
+            <div class="twitter"></div>
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./Images/Instagram logo.jpg" alt="Instagram">
+            <div class="instagram"></div>
+        </a>
+    </div>
+</footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

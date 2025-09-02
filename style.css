@@ -1,0 +1,629 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background-color: #0071ce;
+    box-shadow: 0 2px 8px rgba(0,113,206,0.08);
+}
+
+.header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+nav.main ul {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,113,206,0.05);
+}
+
+nav.main ul li {
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #eee;
+}
+
+nav.main ul li:last-child {
+    border-right: none;
+}
+
+nav.main ul li a {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    color: #0071ce;
+    font-weight: 500;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #fff 60%, #ffe066 100%);
+    margin: 4px;
+    box-shadow: 0 1px 4px rgba(0,113,206,0.04);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+nav.main ul li a:hover,
+nav.main ul li a.active {
+    background: linear-gradient(90deg, #0071ce 0%, #005fa3 100%);
+    color: #ffc220;
+    box-shadow: 0 2px 8px rgba(0,113,206,0.12);
+}
+
+/* Search Bar */
+.search-bar-container {
+    width: 100%;
+    background: #fffbe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,113,206,0.05);
+    padding: 16px 0;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: linear-gradient(90deg, #ffc220 0%, #ffe066 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: linear-gradient(90deg, #0071ce 0%, #005fa3 100%);
+    color: #fff;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 18px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffc220 0%, #ffe066 100%);
+    color: #222;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover,
+.signup-btn:hover {
+    background: linear-gradient(90deg, #0071ce 0%, #005fa3 100%);
+    color: #fff;
+}
+
+.signup-btn {
+    background: linear-gradient(90deg, #0071ce 0%, #005fa3 100%);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    min-height: 420px;
+    background: linear-gradient(rgba(0,113,206,0.12), rgba(255,194,32,0.08)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 32px rgba(0,113,206,0.10);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.hero-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+    padding: 48px 16px 24px 16px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #0071ce;
+    margin-bottom: 10px;
+}
+
+.hero-content .highlight {
+    color: #ffc220;
+}
+
+.hero-content .slogan {
+    color: #0071ce;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.hero-gallery {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,113,206,0.10);
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.hero-box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,113,206,0.18);
+}
+
+.hero-box img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.hero-box h4 {
+    margin: 12px 0 8px 0;
+    color: #0071ce;
+    font-size: 1.1rem;
+}
+
+.hero-box p {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    padding: 0 10px;
+}
+
+/* product Section */
+.product {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,113,206,0.06);
+    padding: 40px;
+}
+
+.product h2 {
+    text-align: center;
+    color: #0071ce;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    background: #f7f7fa;
+    border-radius: 14px;
+    padding: 28px 18px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0,113,206,0.04);
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.feature:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,113,206,0.18);
+    border: 1.5px solid #ffc220;
+    z-index: 1;
+}
+
+.feature h3 {
+    color: #ffc220;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.feature p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.feature .cta-btn.add-cart-btn {
+    margin-top: auto;
+    align-self: center;
+    width: 80%;
+    min-width: 120px;
+    margin-bottom: 16px;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+.cta h2 {
+    color: #0071ce;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+}
+
+/* Footer */
+footer {
+    background: #0071ce;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 0 0 18px 18px;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+/* --- Account Page Styles --- */
+.product.account-section,
+.product#account-section {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,113,206,0.10);
+    padding: 32px 28px;
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#signupForm input[type="text"],
+#signupForm input[type="email"],
+#signupForm input[type="password"] {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+    background: #f4f6f8;
+}
+
+#signupForm input:focus {
+    border: 1.5px solid #0071ce;
+    background: #e3f0ff;
+}
+
+#signupForm button {
+    margin-top: 10px;
+}
+
+.product.account-section h2,
+.product#account-section h2 {
+    color: #0071ce;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product.account-section p,
+.product#account-section p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 1rem;
+}
+
+.product.account-section a,
+.product#account-section a {
+    color: #0071ce;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product.account-section a:hover,
+.product#account-section a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contact Page Styles --- */
+.product.contact-section,
+.product#contact-section {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,113,206,0.10);
+    padding: 32px 28px;
+    position: relative;
+}
+
+.product.contact-section h2,
+.product#contact-section h2 {
+    color: #0071ce;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+    background: #f4f6f8;
+    resize: vertical;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border: 1.5px solid #0071ce;
+    background: #e3f0ff;
+}
+
+#contactForm button {
+    margin-top: 10px;
+}
+
+.product.contact-section p,
+.product#contact-section p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 1rem;
+}
+
+.product.contact-section strong,
+.product#contact-section strong {
+    color: #0071ce;
+}
+
+.product.contact-section a,
+.product#contact-section a {
+    color: #0071ce;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product.contact-section a:hover,
+.product#contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Nice background for contact page */
+body.contact-page {
+    background: linear-gradient(135deg, #e3f0ff 0%, #ffe066 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 10px;
+    }
+    nav.main ul {
+        margin-bottom: 18px;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav.main ul li {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    nav.main ul li:last-child {
+        border-bottom: none;
+    }
+    .search-bar {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+    }
+    .search-bar input[type="text"] {
+        flex: 1;
+        padding: 12px 16px;
+    }
+    .search-bar button {
+        padding: 12px 20px;
+        width: 100%;
+    }
+    .header-actions {
+        margin-top: 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .cta-btn {
+        width: 100%;
+        padding: 12px 24px;
+    }
+    footer {
+        font-size: 0.9rem;
+        padding: 12px 0;
+    }
+    .product.account-section,
+    .product#account-section {
+        padding: 18px 8px;
+    }
+    .product.contact-section,
+    .product#contact-section {
+        padding: 18px 8px;
+    }
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.social-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,113,206,0.08);
+    transition: background 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon a:hover {
+    background: #ffc220;
+    box-shadow: 0 4px 16px rgba(0,113,206,0.18);
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.social-icon a:hover img {
+    transform: scale(1.1);
+}
+
+/* Optional: Add a colored ring for each social network */
+.social-icon .facebook {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #1877f3;
+    pointer-events: none;
+}
+
+.social-icon .twitter {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #1da1f2;
+    pointer-events: none;
+}
+
+.social-icon .instagram {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #e1306c;
+    pointer-events: none;
+}
+
+.social-icon .linkedin {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #0077b5;
+    pointer-events: none;
+}
+
+.feature.product img {
+    width: 220px;         /* Fixed width for all images */
+    height: 160px;        /* Fixed height for all images */
+    object-fit: auto;    /* Ensures image fills the box and is cropped if needed */
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h2 {
+    text-align: center;
+}

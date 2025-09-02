@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0071ce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohi Mart - Your Everyday Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html">
+            <img src="./Images/Company logo.webp" alt="Rohi Mart Logo" style="width:60px;height:60px;border-radius:50%;">
+        </a>
+        <nav class="main">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="cart.html" class="cta-btn" id="cartBtn">Cart (0)</a>
+            <a href="account.html" class="cta-btn signup-btn" id="accountBtn">Sign In / Sign Up</a>
+        </div>
+    </header>                               
+    <!-- Search Bar Below Navigation -->
+    <div class="search-bar-container">
+        <form class="search-bar" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Welcome to <span class="highlight">Rohi Mart</span>
+            </h1>
+            <p>
+                Your one-stop shop for groceries, electronics, home essentials, clothing, and more—all at everyday low prices.<br>
+                <span class="slogan">Shop smart. Live better.</span>
+            </p>
+            <a href="products.html" class="cta-btn">Shop Now</a>
+        </div>
+        <div class="hero-gallery">
+            <div class="hero-box">
+                <img src="./Images/groceries.webp" alt="Groceries">
+                <h4>Groceries</h4>
+                <p>Fresh produce, pantry staples, snacks, and more for your family.</p>
+                <button class="cta-btn add-cart-btn" data-product="Groceries">Shop Now</button>
+            </div>
+            <div class="hero-box">
+                <img src="./Images/electronics.webp" alt="Electronics">
+                <h4>Electronics</h4>
+                <p>Latest gadgets, phones, TVs, and accessories at great prices.</p>
+                <button class="cta-btn add-cart-btn" data-product="Electronics">Shop Now</button>
+            </div>
+            <div class="hero-box">
+                <img src="./Images/home and living.jpeg" alt="Home & Living">
+                <h4>Home & Living</h4>
+                <p>Everything for your home: kitchen, decor, cleaning, and more.</p>
+                <button class="cta-btn add-cart-btn" data-product="Home & Living">Shop Now</button>
+            </div>
+            <div class="hero-box">
+                <img src="./Images/clothes.webp" alt="Clothing">
+                <h4>Clothing</h4>
+                <p>Fashion for men, women, and kids. Everyday style, everyday value.</p>
+                <a href="products.html#clothing" class="cta-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Shop With Us?</h2>
+        <div class="features-list">
+            <div class="feature product">
+                <h3>Wide Selection</h3>
+                <img src="./Images/supermarket building.webp" alt="" style="width:120px; height:120px; object-fit:cover; border-radius:12px; margin-bottom:20px;">
+                <p>From fresh groceries to electronics, find everything you need under one roof.</p>
+            </div>
+            <div class="feature product">
+                <h3>Everyday Low Prices</h3>
+                <img src="./Images/Low prices.webp" alt="Low Prices" style="width:120px; height:120px; object-fit:cover; border-radius:12px; margin-bottom:20px;">
+                <p>Enjoy great value and savings on all your favorite products.</p>
+            </div>
+            <div class="feature product">
+                <h3>Convenient Shopping</h3>
+                <img src="./Images/fast delivery.webp" alt="Fast delivery" style="width:120px; height:120px; object-fit:cover; border-radius:12px; margin-bottom:20px;">
+                <p>Shop online or in-store with fast delivery and easy pickup options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Start Saving Today!</h2>
+        <a href="deals.html" class="cta-btn">View Deals</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rohi Mart. All rights reserved.</p>
+        <div class="social-icon">
+            <a href="https://www.facebook.com" target="_blank"><img src="./Images/facebook logo.jpg" style="width:33px;height:33px;border-radius:50%;" alt="Facebook">
+                <div class="facebook"></div>
+            </a>
+            <a href="https://www.twitter.com" target="_blank"><img src="./Images/x logo.jpg"alt="Twitter">
+                <div class="twitter"></div>
+            </a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./Images/Instagram logo.jpg" alt="Instagram">
+                <div class="instagram"></div>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

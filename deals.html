@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0071ce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - Rohi Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./Images/Company logo.webp" alt="Rohi Mart Logo"
+                style="width:60px;height:60px;border-radius:50%;">
+        </a>
+        <nav class="main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="deals.html" class="active">Deals</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="cta-btn" id="cartBtn">Cart (<span id="itemCount">0</span>)</a>
+            <a href="account.html" class="cta-btn signup-btn" id="accountBtn">Sign In / Sign Up</a>
+        </div>
+    </header>
+    <div class="search-bar-container">
+        <form class="search-bar" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div id="cartItemList">
+        <ul class="list">
+            
+        </ul>
+    </div>
+
+    <section class="features" style="max-width:1100px;">
+        <h2 style="color:#0071ce;text-align:center;">Today's Best Deals</h2>
+        <div class="features-list" style="flex-wrap:wrap;justify-content:center;">
+            <!-- Deal 1 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/back pack.webp"
+                    alt="School Bag" style="width:100%;border-radius:12px;">
+                <h3>School Bag</h3>
+                <p>Now only <span style="color:#0071ce;font-weight:bold;">GH₵ 90 </span> <del
+                        style="color:#888;">GH₵ 120</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐☆</span> (124 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="School Bag">Add to Cart</button>
+            </div>
+            <!-- Deal 2 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/mountain bike.webp"
+                    alt="Mountain Bike" style="width:100%;border-radius:12px;">
+                <h3>Mountain Bike</h3>
+                <p>Special: <span style="color:#0071ce;font-weight:bold;">GH₵ 2,999</span> <del style="color:#888;">GH₵
+                        3,500</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐⭐</span> (600 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Mountain Bike">Add to Cart</button>
+            </div>
+            <!-- Deal 3 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/calculator.webp"
+                    alt="calculator" style="width:100%;border-radius:12px;">
+                <h3>Calculator</h3>
+                <p>Low Price: <span style="color:#0071ce;font-weight:bold;">GH₵ 120</span> <del style="color:#888;">GH₵
+                        150</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐⭐</span> (203 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Calculator">Add to Cart</button>
+            </div>
+            <!-- Deal 4 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/shoe.webp"
+                    alt="And1 Maverick" style="width:100%;border-radius:12px;">
+                <h3>And1 Maverick</h3>
+                <p>Discount: <span style="color:#0071ce;font-weight:bold;">GH₵ 400</span> <del style="color:#888;">GH₵
+                        600</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐☆</span> (57 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Cookware Set">Add to Cart</button>
+            </div>
+            <!-- Deal 5 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/hoodie.webp"
+                    alt="Hoodie" style="width:100%;border-radius:12px;">
+                <h3>Hoodie</h3>
+                <p>Now <span style="color:#0071ce;font-weight:bold;">GH₵ 90</span> <del style="color:#888;">GH₵
+                        150</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐☆</span> (1000 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Hoodie">Add to Cart</button>
+            </div>
+            <!-- Deal 6 -->
+            <div class="feature product" style="max-width:260px;">
+                <img src="./Images/logitech headphone.webp"
+                    alt="Logitech Headphone" style="width:100%;border-radius:12px;">
+                <h3>Logitech Headphone</h3>
+                <p>Special: <span style="color:#0071ce;font-weight:bold;">GH₵ 300</span> <del
+                        style="color:#888;">GH₵ 400</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐⭐</span> (98 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Logitech Headphone">Add to Cart</button>
+            </div>
+            <!-- Deal 7-->
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/Apple monitor.webp"
+                    alt="Apple Monitor" style="width:100%;border-radius:12px;">
+                <h3>Apple Monitor</h3>
+                <p>Special: <span style="color:#0071ce;font-weight:bold;">GH₵ 1,500</span> <del
+                        style="color:#888;">GH₵ 2,000</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐⭐</span> (250 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Apple Monitor">Add to Cart</button>
+            </div>
+            <!-- Deal 8-->
+             <div class="feature product" style="max-width:260px;">
+                <img src="./Images/camera.webp"
+                    alt="camera" style="width:100%;border-radius:12px;">
+                <h3>Camera</h3>
+                <p>Special: <span style="color:#0071ce;font-weight:bold;">GH₵ 2,500</span> <del
+                        style="color:#888;">GH₵ 4,000</del></p>
+                <div class="review">
+                    <span>⭐⭐⭐⭐</span> (5000 reviews)
+                </div>
+                <button class="cta-btn add-cart-btn" data-product="Camera">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2025 Rohi Mart. All rights reserved.</p>
+    <div class="social-icon">
+        <a href="https://www.facebook.com" target="_blank"><img src="./Images/facebook logo.jpg"
+                style="width:33px;height:33px;border-radius:50%;" alt="Facebook">
+            <div class="facebook"></div>
+        </a>
+        <a href="https://www.twitter.com" target="_blank"><img src="./Images/x logo.jpg" alt="Twitter">
+            <div class="twitter"></div>
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./Images/Instagram logo.jpg" alt="Instagram">
+            <div class="instagram"></div>
+        </a>
+    </div>
+</footer>
+</html>

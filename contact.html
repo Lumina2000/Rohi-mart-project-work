@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0071ce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rohi Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./Images/Company logo.webp" alt="Rohi Mart Logo" style="width:60px;height:60px;border-radius:50%;">
+        </a>
+        <nav class="main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+          <div class="header-actions">
+            <a href="cart.html" class="cta-btn" id="cartBtn">Cart (0)</a>
+            <a href="account.html" class="cta-btn signup-btn" id="accountBtn">Sign In / Sign Up</a>
+        </div>
+    </header>
+
+    <section class="features" style="max-width:500px;margin:40px auto;">
+        <h2 style="text-align:center;">Contact Us</h2>
+        <form id="contactForm" style="display:flex;flex-direction:column;gap:16px;">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required style="min-height:80px;"></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+        <div style="text-align:center;margin-top:24px;">
+            <p><strong>Email:</strong> man.eli0304@gmail.com</p>
+            <p><strong>Phone:</strong> +233 0508901047</p>
+            <p><strong>Address:</strong> Counsel Road, Madina, Ghana</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohi Mart. All rights reserved.</p>
+        <div class="social-icon">
+            <a href="https://www.facebook.com" target="_blank"><img src="./Images/facebook logo.jpg" style="width:33px;height:33px;border-radius:50%;" alt="Facebook">
+                <div class="facebook"></div>
+            </a>
+            <a href="https://www.twitter.com" target="_blank"><img src="./Images/x logo.jpg"alt="Twitter">
+                <div class="twitter"></div>
+            </a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./Images/Instagram logo.jpg" alt="Instagram">
+                <div class="instagram"></div>
+            </a>
+        </div>
+    </footer>
+    <script>
+    // Simple client-side validation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        if (!this.name.value.trim() || !this.email.value.trim() || !this.message.value.trim()) {
+            alert('Please fill in all fields.');
+            e.preventDefault();
+        }
+    });
+    </script>
+</body>
